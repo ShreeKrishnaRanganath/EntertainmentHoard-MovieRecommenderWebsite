@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Add Movie</title>
+        <link rel="stylesheet" href="http://localhost/dbmsminiproject/css/2.css">
+                <style>
+            body
+{
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    background-image: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.95)),url("http://localhost/dbmsminiproject/images/movieadd.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.box p{
+    color: aliceblue;
+}
+        </style>
+    </head>
+    <body>
+        <div class="box">
+        <h1>Add New Movie</h1>
+      <img
+        src="http://localhost/dbmsminiproject/images/pop.png"
+        alt="lock"
+        class="pop"
+      />
+        <form action="http://localhost/dbmsminiproject/movieadd.php"  method="post"  >
+            <input type="text" name="MovieName" placeholder="Movie Name" required>
+            <input type="text" name="Genre" placeholder="Genre" required>
+           <p>Release Date:</p>
+            <input type="date" name="ReleaseDate" placeholder="Release Date" required>
+            <input type="text" name="Director" placeholder="Director" required>
+            <input type="text" name="LeadRole" placeholder="Lead Role" required>
+            <input type="text" name="Language" placeholder="Language" required>
+            <input type="submit" name="submit" value="submit">
+            </a>
+        </form>
+    </div>
+    </body>
+</html>

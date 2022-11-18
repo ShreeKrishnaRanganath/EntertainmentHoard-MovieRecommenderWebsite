@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>Select Category</title>
+    <link
+      rel="stylesheet"
+      href="http://localhost/dbmsminiproject/css/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="http://localhost/dbmsminiproject/css/4.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="./logout.php">
+            <button class="scanfcode2">Logout</button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hed">
+      <h2 class="tex">What are you looking for Today??</h2>
+    </div>
+    <section>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="imgbox">
+              <img src="./images/moviedp.jpg" />
+            </div>
+            <div class="box">
+              <div class="content">
+                <h3>Movie</h3>
+                <p>
+                  “The whole of life is just like watching a film. Only it's as
+                  though you always get in ten minutes after the big picture has
+                  started, and no-one will tell you the plot, so you have to
+                  work it out all yourself from the clues.” ― Terry Pratchett,
+                  Moving Pictures
+                </p>
+                <a href="./movieclass.html">
+                  <button class="ripple-btn">Click Here</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imgbox">
+              <img src="./images/directordp.jpg" />
+            </div>
+            <div class="box">
+              <div class="content">
+                <h3>Director</h3>
+                <p>
+                  “Pick up a camera. Shoot something. No matter how small, no
+                  matter how cheesy, no matter whether your friends and your
+                  sister star in it. Put your name on it as director. Now you're
+                  a director. Everything after that you're just negotiating your
+                  budget and your fee.” -James Cameron
+                </p>
+                <a href="./directorclass.html">
+                  <button class="ripple-btn">Click Here</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imgbox">
+              <img src="./images/musicdp.jpg" />
+            </div>
+            <div class="box">
+              <div class="content">
+                <h3>Music</h3>
+                <p>
+                  “Music expresses that which cannot be put into words and that
+                  which cannot remain silent” ― Victor hugo
+                </p>
+                <a href="./musicclass.html">
+                  <button class="ripple-btn">Click Here</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imgbox">
+              <img src="./images/actordp.jpg" />
+            </div>
+            <div class="box">
+              <div class="content">
+                <h3>Artist</h3>
+                <p>
+                  “You might as well ask an artist to explain his art, or ask a
+                  poet to explain his poem. It defeats the purpose. The meaning
+                  is only clear thorough the search.” ― Rick Riordan
+                </p>
+                <a href="./artistclass.html">
+                  <button class="ripple-btn">Click Here</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="http://localhost/dbmsminiproject/js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

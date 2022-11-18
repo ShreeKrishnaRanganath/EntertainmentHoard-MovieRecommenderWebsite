@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>director subcategory</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/6.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.77),
+            rgba(0, 0, 0, 0.77)
+          ),
+          url(./images/directorsub.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h2>From which Language do u want us to select Directors from?</h2>
+      <div class="radio-buttons">
+        <form
+          action="http://localhost/dbmsminiproject/directordb.php"
+          method="post"
+        >
+        <label class="custom-radio">
+          <input type="radio" name="radio" value="1" checked />
+          <span class="radio-btn"
+            ><i class="las la-check"></i>
+            <div class="hobbies-icon">
+              <img
+                src="https://img.icons8.com/clouds/128/000000/fire-element.png"
+              />
+              <h3>TAMIL</h3>
+            </div>
+          </span>
+        </label>
+        <label class="custom-radio">
+          <input type="radio" name="radio" value="2" />
+          <span class="radio-btn"
+            ><i class="las la-check"></i>
+            <div class="hobbies-icon">
+              <img
+                src="https://img.icons8.com/clouds/128/000000/filled-star.png"
+              />
+              <h3>TELUGU</h3>
+            </div>
+          </span>
+        </label>
+        <label class="custom-radio">
+          <input type="radio" name="radio" value="3" />
+          <span class="radio-btn"
+            ><i class="las la-check"></i>
+            <div class="hobbies-icon">
+              <img src="https://img.icons8.com/clouds/128/000000/swamp.png" />
+              <h3>KANNADA</h3>
+            </div>
+          </span>
+        </label>
+        <label class="custom-radio">
+          <input type="radio" name="radio" value="4" />
+          <span class="radio-btn"
+            ><i class="las la-check"></i>
+            <div class="hobbies-icon">
+              <img
+                src="https://img.icons8.com/clouds/128/000000/greek-helmet.png"
+              />
+              <h3>ENGLISH</h3>
+            </div>
+          </span>
+        </label>
+        <div class="sub">
+          <button type="submit" name="submit" data-hover="Let's Go!">
+            <div>Submit!</div>
+          </button>
+          <button> <a href="category.html">Homepage</a> </button>
+      </div>
+    </div>
+  </body>
+</html>

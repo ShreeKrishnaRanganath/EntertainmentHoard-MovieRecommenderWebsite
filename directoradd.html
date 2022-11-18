@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Add Director</title>
+        <link rel="stylesheet" href="http://localhost/dbmsminiproject/css/2.css">
+                <style>
+            body
+{
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    background-image: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.95)),url("http://localhost/dbmsminiproject/images/directoradd.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.box p{
+    color: aliceblue;
+}
+        </style>
+    </head>
+    <body>
+        <div class="box">
+        <h1>Add New Director</h1>
+      <img
+        src="http://localhost/dbmsminiproject/images/dirchair.png"
+        alt="lock"
+        class="pop"
+      />
+        <form action="http://localhost/dbmsminiproject/directoradd.php"  method="post"  >
+            <input type="text" name="name" placeholder="Name" required>
+           <p>Date Of Birth:</p>
+            <input type="date" name="dob" placeholder="dateofbirth" required>
+            <input type="text" name="age" placeholder="Age" required>
+            <input type="text" name="language" placeholder="Language" required>
+            <input type="submit" name="submit" value="submit">
+            </a>
+        </form>
+    </div>
+    </body>
+</html>

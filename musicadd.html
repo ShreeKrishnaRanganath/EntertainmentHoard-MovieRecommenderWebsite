@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Add Music</title>
+        <link rel="stylesheet" href="http://localhost/dbmsminiproject/css/2.css">
+                <style>
+            body
+{
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    background-image: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.95)),url("http://localhost/dbmsminiproject/images/musicadd.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.box p{
+    color: aliceblue;
+}
+        </style>
+    </head>
+    <body>
+        <div class="box">
+        <h1>Add New Music</h1>
+      <img
+        src="http://localhost/dbmsminiproject/images/mus.png"
+        alt="lock"
+        class="pop"
+      />
+        <form action="http://localhost/dbmsminiproject/musicadd.php"  method="post"  >
+            <input type="text" name="name" placeholder="Song Name" required>
+            <input type="text" name="genre" placeholder="Genre" required>
+            <input type="text" name="language" placeholder="Language" required>
+            <input type="submit" name="submit" value="submit">
+            </a>
+        </form>
+    </div>
+    </body>
+</html>

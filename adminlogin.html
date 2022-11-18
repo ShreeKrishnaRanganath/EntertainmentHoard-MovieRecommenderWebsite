@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>User Login</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.87),
+            rgba(0, 0, 0, 0.87)
+          ),
+          url(http://localhost/dbmsminiproject/images/admin.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+    <link rel="stylesheet" href="http://localhost/dbmsminiproject/css/2.css" />
+  </head>
+
+  <body>
+    <br />
+    <br />
+
+    <div class="box">
+      <h1>Admin Login</h1>
+      <img
+        src="http://localhost/dbmsminiproject/images/lo.png"
+        alt="lock"
+        class="lock"
+      />
+      <form
+        action="http://localhost/dbmsminiproject/adminlogin.php"
+        method="post"
+      >
+        <input placeholder="Username" type="text" name="loginid" />
+        <input placeholder="Password" type="password" name="pass" />
+        <input type="submit" name="login" value="SIGN IN" />
+      </form>
+    </div>
+  </body>
+</html>

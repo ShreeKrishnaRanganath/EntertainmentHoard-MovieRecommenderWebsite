@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ebe7103a;
+}
+.container {
+  position: fixed;
+  right: 1em;
+  top: 0px;
+  width: 70vw;
+  height: 100vh;
+  overflow: scroll;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  background-color: rgba(35, 146, 161, 0.623);
+  color: rgb(255, 255, 255);
+  padding: 25px;
+  font-size: 1.3em;
+}
+table td {
+  padding: 25px;
+  color: rgb(247, 242, 242);
+  font-size: 1.3em;
+  text-align: center;
+}
+table tr:nth-child(odd) {
+  background-color: #6791318a;
+}
+
+.back {
+  position: relative;
+  padding: 1em;
+  text-align: center;
+}
+
+button {
+  border-radius: 4px;
+  background-color: #12eec97a;
+  border: none;
+  color: rgb(247, 243, 243);
+  text-align: center;
+  font-size: 22px;
+  padding: 5px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+button:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 5px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+button a {
+  text-decoration: none;
+}

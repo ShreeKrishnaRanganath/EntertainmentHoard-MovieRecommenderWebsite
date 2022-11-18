@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  color: beige;
+}
+
+.box {
+  width: 450px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191919a4;
+  text-align: center;
+}
+.box h1 {
+  color: white;
+  font-weight: 500;
+  padding: 1em 0px;
+}
+.box input[type="text"],
+.box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 290px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+
+  transition: 0.25s;
+}
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  width: 380px;
+
+  border-color: #2ec1cc;
+}
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #0accda;
+  padding: 14px 40px;
+  outline: white;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type="submit"]:hover {
+  background: #14c8f591;
+}
+
+.lock {
+  width: 3em;
+  height: 5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.pop {
+  width: 5.5em;
+  height: 7em;
+  padding-top: 0em;
+  padding-bottom: 1em;
+  z-index: 5;
+}

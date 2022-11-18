@@ -1,0 +1,243 @@
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(../images/indexwallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wel {
+  color: aliceblue;
+  text-align: center;
+  margin-top: 8.5%;
+  font-size: 5em;
+  font-family: "Yeseva One", cursive;
+}
+
+.one {
+  text-align: center;
+  color: #fff;
+  padding: 8%;
+}
+.one > h1 {
+  margin: 1%;
+}
+
+.two {
+  color: #fff;
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/* Navigation */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(44, 42, 42, 0.616);
+  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  list-style: none;
+  position: relative;
+  float: right;
+  margin-right: 100px;
+  display: inline-table;
+}
+nav ul li {
+  float: left;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul li {
+  float: left;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+nav ul li a {
+  display: block;
+  padding: 30px 20px;
+  color: rgb(248, 238, 238);
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul ul {
+  display: none;
+  background: rgba(15, 14, 14, 0.637);
+  position: absolute;
+  top: 100%;
+  box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav ul ul li {
+  float: none;
+  position: relative;
+}
+nav ul ul li a {
+  padding: 15px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+nav ul ul ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+/* nav ends */
+
+/* login buttons */
+.btn1 {
+  margin: 4em;
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.btn1:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn1:active {
+  color: rgb(32, 31, 31);
+}
+
+.btn1:active:after {
+  background: transparent;
+}
+
+.btn1:hover:before {
+  opacity: 1;
+}
+
+.btn1:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(37, 37, 37);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* register button */
+.btn {
+  background-color: #201f4d85;
+  padding: 10px;
+  border: 0px;
+  color: #fff;
+  font-family: "BenchNine", Arial, sans-serif;
+  font-size: 20px;
+  margin: 10px 40px;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn:before,
+.btn:after {
+  border-color: #a5b44e7a;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.btn:before {
+  border-left-width: 2px;
+  border-top-width: 2px;
+  left: -5px;
+  top: -5px;
+}
+
+.btn:after {
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  bottom: -5px;
+  right: -5px;
+}
+.btn:hover:before,
+.btn:hover:after {
+  height: 100%;
+  width: 100%;
+}

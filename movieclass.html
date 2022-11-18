@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>movie subcategory</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/6.css" />
+    <link rel="stylesheet" href="css/line-awesome.min.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.97),
+            rgba(0, 0, 0, 0.97)
+          ),
+          url(./images/moviesub.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h2>What's your mood today??</h2>
+
+      <div class="radio-buttons">
+        <form
+          action="http://localhost/dbmsminiproject/moviedb.php"
+          method="post"
+        >
+          <label class="custom-radio">
+            <input type="radio" name="radio" value="1" checked />
+            <span class="radio-btn"
+              ><i class="las la-check"></i>
+              <div class="hobbies-icon">
+                <img
+                  src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/000000/external-love-love-flatart-icons-flat-flatarticons.png"
+                />
+                <h3>
+                  Just HOT-CHOCLATE <br />
+                  & <br />
+                  Romantic Hits
+                </h3>
+              </div>
+            </span>
+          </label>
+
+          <label class="custom-radio">
+            <input type="radio" name="radio" value="2" />
+            <span class="radio-btn"
+              ><i class="las la-check"></i>
+              <div class="hobbies-icon">
+                <img
+                  src="https://img.icons8.com/external-filled-outline-icons-maxicons/128/000000/external-action-movie-filled-outline-filled-outline-icons-maxicons-3.png"
+                />
+                <h3>Spice up a Rainy evening with some Action Sequence</h3>
+              </div>
+            </span>
+          </label>
+          <label class="custom-radio">
+            <input type="radio" name="radio" value="3" />
+            <span class="radio-btn"
+              ><i class="las la-check"></i>
+              <div class="hobbies-icon">
+                <img
+                  src="https://img.icons8.com/clouds/128/000000/spongebob-squarepants.png"
+                />
+                <h3>Comedy Night with Friends</h3>
+              </div>
+            </span>
+          </label>
+          <label class="custom-radio">
+            <input type="radio" name="radio" value="4" />
+            <span class="radio-btn"
+              ><i class="las la-check"></i>
+              <div class="hobbies-icon">
+                <img
+                  src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/128/000000/external-unicorn-magic-and-fairy-tale-icongeek26-linear-colour-icongeek26.png"
+                />
+                <h3>Fantastic Fiction Storys</h3>
+              </div>
+            </span>
+          </label>
+          <div class="sub">
+            <button type="submit" name="submit" data-hover="Let's Go!">
+              <div>Submit!</div>
+            </button>
+            <button><a href="category.html">Homepage</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
